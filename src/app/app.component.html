@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="padding: 10px;">
+  <a class="navbar-brand" href="#" style="color: #2F5597; font-weight: bold;">Digital Library</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add-book" routerLinkActive="active">Add Book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/delete-book" routerLinkActive="active">Delete Book</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/view-books" routerLinkActive="active">View Books</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

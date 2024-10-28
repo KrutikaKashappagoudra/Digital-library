@@ -1,0 +1,72 @@
+<div class="container mt-5">
+    <h2 style="color: #2F5597;">Add Book</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3 row">
+        <label for="isbn" class="col-sm-2 col-form-label label-custom">ISBN Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="isbn" [(ngModel)]="book.isbn" name="isbn" minlength="5" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="name" class="col-sm-2 col-form-label label-custom">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" [(ngModel)]="book.name" name="name" minlength="5" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="author" class="col-sm-2 col-form-label label-custom">Author</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="author" [(ngModel)]="book.author" name="author" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="publication" class="col-sm-2 col-form-label label-custom">Publication</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="publication" [(ngModel)]="book.publication" name="publication" minlength="5" maxlength="50" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="details" class="col-sm-2 col-form-label label-custom">Details</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="details" rows="4" [(ngModel)]="book.details" name="details" minlength="5" maxlength="250" required></textarea>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="qty" class="col-sm-2 col-form-label label-custom">Qty</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="qty" [(ngModel)]="book.qty" name="qty" minlength="1" maxlength="5" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="price" class="col-sm-2 col-form-label label-custom">Price</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="price" [(ngModel)]="book.price" name="price" minlength="5" maxlength="2" required>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="branch" class="col-sm-2 col-form-label label-custom">Branch</label>
+        <div class="col-sm-10">
+          <select class="form-control" id="branch" [(ngModel)]="book.branch" name="branch" required>
+            <option value="" disabled selected></option>
+            <option value="IT">IT</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <div class="col-sm-10 offset-sm-2">
+          <button type="submit" class="btn btn-primary" style="background-color: #4472C4; width: 100%;">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

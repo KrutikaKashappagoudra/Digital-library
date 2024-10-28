@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <h2 style="color: #2F5597;">Delete Books</h2>
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>ISBN</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Publication</th>
+                <th>Qty.</th>
+                <th>Price</th>
+                <th>Branch</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{ book.isbn }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.publication }}</td>
+                <td>{{ book.qty }}</td>
+                <td>{{ book.price }}</td>
+                <td>{{ book.branch }}</td>
+                <td>
+                  <i class="fa-solid fa-xmark" style="color: red; display: flex; align-items: center;" (click)="onDelete(book)"></i>
+                </td>
+              </tr>
+
+        </tbody>
+    </table>
+</div>

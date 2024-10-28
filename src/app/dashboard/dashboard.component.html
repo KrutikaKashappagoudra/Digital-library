@@ -1,0 +1,137 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Side Navbar -->
+<nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+  <div class="position-sticky">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <i class="fa-solid fa-plus"></i> 
+          Add Book
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-xmark"></i> 
+          Delete Books
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-regular fa-file-lines"></i> 
+          View Books
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-user"></i> 
+          Add Students
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-clipboard-list"></i> 
+          Issue Books
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-undo"></i> 
+          Return Book
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-table-cells"></i> 
+          Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="mt-5">
+        <h2 style="color: #2F5597;">Dashboard</h2>
+
+        <div class="row mt-4">
+          <!-- Bar Chart Column -->
+          <div class="col-md-6">
+            <div class="chart-container" style="height: 400px; width: 100%;">
+
+              <canvas id="barChartCanvas"></canvas>
+            </div>
+          </div>
+
+          <!-- Pie Chart Column -->
+          <div class="col-md-6">
+            <div class="chart-container" style="height: 400px; width: 100%;">
+              <canvas id="pieChartCanvas"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="mt-4">
+          <h5 style="font-weight: bold;">Issued Book Summery</h5>
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>ISBN</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Issued On</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Empty rows -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

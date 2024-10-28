@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <h2 class="text-center" style="color: #2F5597;">Digital Library</h2>
+  <form class="mt-4" (ngSubmit)="onLogin()" #loginForm="ngForm">
+    <div class="mb-3 row">
+      <label for="username" class="col-sm-2 col-form-label label-custom">Username</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          name="username"
+          [(ngModel)]="username"
+          required
+          minlength="5"
+          #usernameInput="ngModel"
+        />
+        <div *ngIf="usernameInput.invalid && usernameInput.touched" class="text-danger">
+          Username is required and must be at least 5 characters.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <label for="password" class="col-sm-2 col-form-label label-custom">Password</label>
+      <div class="col-sm-10">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+          minlength="6"
+          #passwordInput="ngModel"
+        />
+        <div *ngIf="passwordInput.invalid && passwordInput.touched" class="text-danger">
+          Password is required and must be at least 6 characters.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3 row">
+      <div class="col-sm-10 offset-sm-2">
+        <button type="submit" class="btn btn-primary w-100" style="background-color: #4472C4;" [disabled]="loginForm.invalid">
+          Login
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
